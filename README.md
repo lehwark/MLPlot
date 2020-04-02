@@ -1,3 +1,3 @@
 # MLPlot
 
-![Example](example.svg)
+![](./example.svg)
