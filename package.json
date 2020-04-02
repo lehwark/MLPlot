@@ -1,9 +1,14 @@
 {
   "name": "mlplot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "mlplot",
+  "main": "build/index.js",
+  "files": [
+    "build/*"
+  ],
+  "types": "index.d.ts",
   "scripts": {
+    "build:demo": "tsc && cd demo && rollup demo.js --file bundle.js --format cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,9 +16,12 @@
     "url": "git+https://github.com/lehwark/MLPlot.git"
   },
   "author": "Pascal Lehwark <pascal@ntzwrk.de> (https://www.linkedin.com/in/pascal-lehwark/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lehwark/MLPlot/issues"
   },
-  "homepage": "https://github.com/lehwark/MLPlot#readme"
+  "homepage": "https://github.com/lehwark/MLPlot#readme",
+  "devDependencies": {
+    "@types/node": "^13.9.8"
+  }
 }
